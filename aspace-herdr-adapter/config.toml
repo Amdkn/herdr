@@ -1,0 +1,9 @@
+# A'Space adapter config for herdr (D-N053 pas F1, D-F1-5).
+# Install to $XDG_CONFIG_HOME/herdr/config.toml (default
+# ~/.config/herdr/config.toml) or point HERDR_CONFIG_PATH at this file.
+# Both background checks are ON by default upstream (production, every
+# 30 min); the adapter forces them off. `herdr update` / `herdr plugin
+# update` stay manual and outside the adapter contract.
+[update]
+version_check = false
+manifest_check = false
